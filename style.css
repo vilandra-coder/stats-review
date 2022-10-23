@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #000;
+}
+.container {
+  width: 90rem;
+  height: 33rem;
+  display: flex;
+  border-radius: 0.8rem;
+  margin: 20rem auto;
+
+  overflow: hidden;
+}
+.content-text {
+  flex: 1;
+  padding: 3.5rem;
+  background-color: rgb(27, 25, 56);
+  color: #fff;
+}
+h1 {
+  padding-right: 7rem;
+  margin-bottom: 2rem;
+}
+.h1-text span {
+  color: rgba(170, 92, 219);
+}
+.p-text {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  padding-right: 8rem;
+  margin-bottom: 5rem;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+h5 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+.content-image {
+  flex: 1;
+  background-image: linear-gradient(
+      to left top,
+      rgba(135, 34, 198, 0.646),
+      rgba(170, 92, 219, 0.77)
+    ),
+    url("images/image-header-desktop.jpg");
+  background-size: cover;
+}
+.review {
+  display: flex;
+  gap: 7.7rem;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    width: 32rem;
+    flex-direction: column-reverse;
+    margin: 4rem 3rem;
+    height: 70rem;
+    text-align: center;
+  }
+  .h1-text {
+    font-size: 2.5rem;
+    padding-right: 0;
+  }
+  .p-text {
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    padding-right: 0;
+  }
+  .content-text {
+    flex: 2;
+  }
+  .h3:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  .content-image {
+    flex: 1;
+  }
+}
